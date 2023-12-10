@@ -1,0 +1,12 @@
+---
+title: "Introduction to SA23204160"
+author: "Liangchen He"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to SA23204160}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Function __TransAbess__ is built to implement TransAbess algorithm. It includes two parts, one is achieved by non-user level function __OracleTransAbess__ and another is to estimate the transferring set using the rank of loss in selecting source data with different indexes. We import package __abess__ to achieve the most important subset selection process. Moreover, during the computation, we write a Rcpp function to generate a constant large sparse matrix and convert it from __sp_mat__ in RcppArmadillo to __S4__ dgCMatrix in Rcpp, this saves time. We also write a function __model__ to generate some data for test, including high-dimensional sparse data and ordinary data.

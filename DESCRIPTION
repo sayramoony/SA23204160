@@ -1,0 +1,17 @@
+Package: SA23204160
+Type: Package
+Title: Fit a transfer learning linear model based on abess algorithm
+Version: 1.0
+Date: 2023-12-01
+Author: Liangchen He
+Maintainer: Liangchen He <sayramoony@gmail.com>
+Description: R functions to implement TransAbess algorithm, with Rcpp functions used for faster matrices construction.
+License: GPL (>= 2)
+Imports: abess, foreach, Matrix, Rcpp, RcppArmadillo, stats, boot, bootstrap, coda, DAAG, dplyr, twosamples
+Suggests: knitr, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.3
+Encoding: UTF-8
+VignetteBuilder: knitr
+URL: http://github.com/sayramoony/SA23204160
+BugReports: http://github.com/sayramoony/SA23204160/issues
